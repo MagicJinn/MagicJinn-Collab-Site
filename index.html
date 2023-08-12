@@ -31,5 +31,54 @@
     <img src="web_resources/tbh-creature.gif" alt="Creature GIF" onclick="document.getElementById('myAudio').play()">
     </div>
 <audio id="myAudio" src="web_resources/YIPPEE.mp3" controls></audio>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Website with GIF, Background, and Audio</title>
+    <script>src="js/meteor.js"</script>
+    <style>
+        body {
+            background-image: url("web_resources/background.png");
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .gif-container img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif-container">
+    <h1>YIPPEE</h1>
+    <img src="web_resources/tbh-creature.gif" alt="Creature GIF" onclick="document.getElementById('myAudio').play()">
+    </div>
+<audio id="myAudio" src="web_resources/YIPPEE.mp3" controls></audio>
+    <input type="text" id="equationInput" placeholder="Enter your math equation">
+  <button onclick="solveEquation()">Solve</button>
+  <div id="result"></div>
+
+  <script>
+    function solveEquation() {
+      // Get the user input from the input field
+      var equation = document.getElementById("equationInput").value;
+
+      // Solve the equation
+      var result = eval(equation);
+
+      // Display the result
+      document.getElementById("result").innerHTML = "Result: " + result;
+    }
+  </script>
 </body>
 </html>
