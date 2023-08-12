@@ -7,6 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
+    overflow: hidden; /* Hide the scrollbar */
 }
 
 .gif-container {
@@ -26,8 +27,16 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
+    width: 200px;
     /* adjust size as needed */
-    height: 50px;
-    background: url('meteor.gif') center/cover no-repeat;
+    height: 200px;
+    background: url('web_resources/meteor.gif') center/cover no-repeat;
+}
+
+.meteor-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-repeat: no-repeat; /* Prevent logo from repeating */
+    background-size: 40% auto; /* Adjust logo size (50% width) */
+    background-position: left bottom; /* Adjust logo's vertical position */
 }
