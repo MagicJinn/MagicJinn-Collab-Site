@@ -7,6 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
+    overflow: hidden; /* Hide the scrollbar */
 }
 
 .gif-container {
@@ -15,3 +16,4 @@ body {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
