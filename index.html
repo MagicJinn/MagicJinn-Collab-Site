@@ -31,5 +31,21 @@
     <img src="web_resources/tbh-creature.gif" alt="Creature GIF" onclick="document.getElementById('myAudio').play()">
     </div>
 <audio id="myAudio" src="web_resources/YIPPEE.mp3" controls></audio>
+      <input type="text" id="equationInput" placeholder="Enter your math equation">
+  <button onclick="solveEquation()">Solve</button>
+  <div id="result"></div>
+
+  <script>
+    function solveEquation() {
+      // Get the user input from the input field
+      var equation = document.getElementById("equationInput").value;
+
+      // Solve the equation
+      var result = eval(equation);
+
+      // Display the result
+      document.getElementById("result").innerHTML = "Result: " + result;
+    }
+  </script>
 </body>
 </html>
