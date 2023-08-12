@@ -1,7 +1,7 @@
 // script.js
 window.onload = function() {
     const gifElement = document.getElementById('gif');
-    gifElement.src = '6276-spinning-cat.gif';
+    gifElement.src = 'web_resources/6276-spinning-cat.gif';
 }
 const myButton = document.getElementById('myButton');
 myButton.addEventListener('click', () => {
