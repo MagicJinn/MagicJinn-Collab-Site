@@ -45,3 +45,13 @@
     text-decoration: none;
     color: white;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("web_resources/background.png");
+    background-position: top;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
