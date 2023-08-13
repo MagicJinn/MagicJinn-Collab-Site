@@ -17,3 +17,26 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.meteor-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.meteor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    /* adjust size as needed */
+    height: 200px;
+    background: url('web_resources/meteor.gif') center/cover no-repeat;
+}
+
+.meteor-logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-repeat: no-repeat; /* Prevent logo from repeating */
+    background-size: 40% auto; /* Adjust logo size (50% width) */
+    background-position: left bottom; /* Adjust logo's vertical position */
+}
