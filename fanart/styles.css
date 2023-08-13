@@ -1,0 +1,47 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artwork {
+    flex: 0 0 calc(33.33% - 10px);
+    /* Adjust as needed for margins */
+    margin-bottom: 20px;
+    /* Optional margin between rows */
+}
+
+.artwork img {
+    max-width: 100%;
+    /* Limit image width to its container */
+    max-height: 200px;
+    /* Set a maximum height for the images */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
+}
+
+.navigation-bar {
+    background-color: #333;
+    /* Background color for the navigation bar */
+    color: white;
+    /* Text color for the menu items */
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Display the menu items in a row */
+}
+
+.navigation-bar ul li {
+    margin-right: 20px;
+    /* Add spacing between menu items */
+}
+
+.navigation-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
