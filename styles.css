@@ -8,6 +8,8 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
     overflow: hidden; /* Hide the scrollbar */
+    background-image: url("web_resources/background.png");
+    background-position: center;
 }
 
 .gif-container {
@@ -15,6 +17,15 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gif-container img {
+    width: 300px;
+    height: 300px;
 }
 
 .meteor-container {
@@ -27,8 +38,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 200px;
-    /* adjust size as needed */
+    width: 200px; /* adjust size as needed */
     height: 200px;
     background: url('web_resources/meteor.gif') center/cover no-repeat;
 }
