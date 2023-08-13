@@ -25,14 +25,30 @@ slider.style.position = "absolute";
 slider.style.left = `${labelX}px`;
 slider.style.top = `${labelY + 30}px`; // Adjust the vertical position if needed
 
+const p = "web_resources/"
 const meteors = [{
-    image: "web_resources/youtube-logo.png",
+    image: p + "youtube-logo.png",
     link: "https://www.youtube.com/@MagicJinn"
   },
   {
-    image: "web_resources/twitter-logo.png",
+    image: p + "twitter-logo.png",
     link: "https://twitter.com/MagicJinn_"
-  },
+  }, {
+    image: p + "discord-logo.png",
+    link: "https://discord.gg/bQvtauxXWp"
+  }, {
+    image: p + "github-logo.png",
+    link: "https://github.com/MagicJinn"
+  }, {
+    image: p + "patreon-logo.png",
+    link: "https://patreon.com/MagicJinn"
+  }, {
+    image: p + "twitch-logo.png",
+    link: "https://twitch.tv/magicjinn"
+  }, {
+    image: p + "instagram-logo.png",
+    link: "https://instagram.com/manderinjo"
+  }
   // Add more meteor objects as needed
 ];
 
@@ -68,7 +84,7 @@ function moveMeteor(meteor, targetX, targetY, duration) {
 
   meteor.addEventListener("click", () => {
     const meteorInfo = meteor.meteorInfo;
-    window.location.href = meteorInfo.link;
+    window.open(meteorInfo.link, '_blank');
   });
 }
 
@@ -90,7 +106,7 @@ function createMeteor() {
   const targetX = getRandomNumber(-1000, window.innerWidth - meteorWidth);
   const targetY = window.innerHeight; // Move to the bottom of the screen
   const distance = calculateDistance(meteorStartX, meteorStartY, targetX, targetY);
-  const duration = distance / 1; // Adjust the factor as needed
+  const duration = distance;
 
   meteor.style.left = `${meteorStartX}px`;
   meteor.style.top = `${meteorStartY}px`;
