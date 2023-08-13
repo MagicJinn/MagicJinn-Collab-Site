@@ -69,7 +69,7 @@ function moveMeteor(meteor, targetX, targetY, duration) {
     const currentTime = performance.now();
     const progress = (currentTime - startTime) / duration;
 
-    if (progress < 1) {
+    if (progress < 3) {
       const currentX = startX + (targetX - startX) * progress;
       const currentY = startY + (targetY - startY) * progress;
       meteor.style.left = `${currentX}px`;
