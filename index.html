@@ -2,7 +2,10 @@
 <html>
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GIF Example</title>
 </head>
 
 <body>
@@ -14,6 +17,7 @@
         <img src="web_resources/tbh-creature.gif" alt="Creature GIF"
             onclick="document.getElementById('myAudio').play()">
     </div>
+
     <audio id="myAudio" src="web_resources/YIPPEE.mp3" controls></audio>
     <input type="text" id="equationInput" placeholder="Enter your math equation">
     <button onclick="solveEquation()">Solve</button>
@@ -31,18 +35,14 @@
             document.getElementById("result").innerHTML = "Result: " + result;
         }
     </script>
-</body>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>GIF Example</title>
-</head>
-
-<body>
     <div class="gif-container">
         <img id="gif" src="" alt="GIF">
     </div>
     <script src="js/script.js"></script>
+</body>
 
+<head>
+
+</head>
+
+</html>
